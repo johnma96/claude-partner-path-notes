@@ -1,7 +1,7 @@
 # INDEX.md — Mapa de conocimiento · Claude Partner Network
 
 > Autor: John Mario Montoya Zapata
-> Última actualización: 09/06/2026 (sesión 2)
+> Última actualización: 10/06/2026 (sesión 3)
 > Estado de la ruta: 🟡 En progreso
 >
 > **Este archivo es mantenido por Claude.** Cada vez que se crea o modifica una nota,
@@ -16,7 +16,7 @@
 |-------|--------|----------------------|
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
 | 02 · Building with the Claude API | ✅ Completado | 12 / 12 |
-| 03 · Introduction to Model Context Protocol | ⬜ Pendiente | 0 / ? |
+| 03 · Introduction to Model Context Protocol | ✅ Cubierto en Curso 02 | — |
 | 04 · Claude Code in Action | ⬜ Pendiente | 0 / ? |
 
 ---
@@ -60,14 +60,14 @@
 
 ---
 
-## 03 · Introduction to Model Context Protocol
+## 03 · Introduction to Model Context Protocol ✅
 
-> Construir servidores y clientes MCP en Python.
-> Primitivas fundamentales: **tools**, **resources**, **prompts**.
+> El contenido de este curso es idéntico a la sección MCP del Curso 02 (lectures 46–55).
+> No se crean notas duplicadas — ver [[02_claude_api/010x_mcp/100_mcp]].
+>
+> **Único aporte nuevo:** framing de control de primitivas — tools (modelo), resources (app), prompts (usuario).
 
-- Overview: [[03_mcp/_overview]] ⬜
-- Lectures:
-  *(se irán agregando a medida que avances)*
+- Overview: [[03_mcp/_overview]] ✅ *(documenta el solapamiento y el único aporte diferencial)*
 
 ---
 
