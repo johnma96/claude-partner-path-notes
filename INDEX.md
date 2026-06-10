@@ -1,8 +1,8 @@
 # INDEX.md — Mapa de conocimiento · Claude Partner Network
 
 > Autor: John Mario Montoya Zapata
-> Última actualización: 10/06/2026 (sesión 3)
-> Estado de la ruta: 🟡 En progreso
+> Última actualización: 10/06/2026 (sesión 5)
+> Estado de la ruta: ✅ Completado
 >
 > **Este archivo es mantenido por Claude.** Cada vez que se crea o modifica una nota,
 > Claude actualiza las secciones correspondientes. No editar manualmente las tablas de
@@ -17,7 +17,7 @@
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
 | 02 · Building with the Claude API | ✅ Completado | 12 / 12 |
 | 03 · Introduction to Model Context Protocol | ✅ Cubierto en Curso 02 | — |
-| 04 · Claude Code in Action | 🟡 En progreso | 1 / ? |
+| 04 · Claude Code in Action | ✅ Completado | 2 / 2 |
 
 ---
 
@@ -71,13 +71,15 @@
 
 ---
 
-## 04 · Claude Code in Action 🟡
+## 04 · Claude Code in Action ✅
 
 > Integrar Claude Code en flujos de desarrollo reales: contexto, hooks, MCP, GitHub Actions y SDK.
+> **Completado:** 10/06/2026
 
-- Overview: [[04_claude_code/_overview]] 🟡
+- Overview: [[04_claude_code/_overview]] ✅
 - Lectures:
   - [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]] — Coding assistant = LLM + tool use · demos (Chalk 3.9×, churn, Playwright, PII detection) ✅
+  - [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]] — CLAUDE.md en 3 niveles · Plan/Thinking Mode · /compact · Custom commands · Hooks (pre/post, exit 2) · MCP · GitHub Actions · SDK ✅
 
 ---
 
@@ -175,6 +177,15 @@ flowchart TD
 - **Loop de tool use en Claude Code**: solicita acción → ejecuta en sistema real → resultado vuelve → repite hasta `stop_reason != "tool_use"` → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
 - **Extensibilidad MCP**: `claude mcp add nombre comando` conecta cualquier servidor MCP al agente → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
 - **GitHub Actions + Claude Code**: revisiones automáticas en PRs con herramientas GitHub (comentarios, commits) · detección de PII en flujo de datos → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
+- **CLAUDE.md en 4 niveles**: Managed Policy (org) · User (`~/.claude/`) · Project (commiteado) · Local (`CLAUDE.local.md`, gitignored) → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Plan Mode vs Extended Thinking**: Shift+Tab cicla modos hasta `plan` · `Alt+T`/`Option+T` = toggle extended thinking (no "Ultra think") → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **`/compact` vs `/clear`**: compact = comprime historial preservando conocimiento adquirido; clear = borra todo para tarea nueva sin relación → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Hooks**: pre-tool (puede bloquear con exit 2 + stderr) y post-tool (feedback sin bloqueo) · JSON por stdin con `tool_name` + `tool_input` → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Comandos personalizados**: `.claude/commands/<nombre>.md` → `/nombre` en Claude Code · `$arguments` para parámetros → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **`claude mcp add <nombre> <cmd>`**: registra servidor MCP en Claude Code · auto-aprobación vía `"MCP__<servidor>__*"` en `settings.local.json` → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Claude Code SDK**: paquete `@anthropic-ai/claude-agent-sdk` · stream asíncrono `for await` · acceso total por defecto · restringir con `allowedTools: ["Read","Glob"]` → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Hook TypeScript checker**: post-tool sobre `edit` que corre `tsc --no-emit` y devuelve errores a Claude para autocorrección → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
+- **Hook de deduplicación**: post-tool sobre directorio crítico que lanza instancia Claude secundaria vía SDK para comparar código nuevo vs existente → [[04_claude_code/02x_getting_hands_on/020_getting_hands_on]]
 
 ---
 
