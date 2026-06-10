@@ -20,6 +20,20 @@ build/
 *.egg
 .Python
 
+# ── Node.js ──────────────────────────────────────────────────────────────────
+node_modules/
+.next/
+.turbo/
+*.tsbuildinfo
+coverage/
+*.log
+
+# ── Prisma / SQLite ──────────────────────────────────────────────────────────
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
 # ── Jupyter ──────────────────────────────────────────────────────────────────
 .ipynb_checkpoints/
 *.ipynb_checkpoints
