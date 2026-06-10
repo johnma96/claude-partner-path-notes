@@ -170,7 +170,7 @@ flowchart TD
 - **Environment Inspection**: observar resultado de cada acción antes de la siguiente · esencial para agentes, especialmente Computer Use → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
 
 ### MCP · Protocolo y primitivas
-*(vacío — se llena al avanzar en Curso 3)*
+*(contenido cubierto en Curso 02 — ver [[02_claude_api/010x_mcp/100_mcp]])*
 
 ### Claude Code · Flujo de desarrollo
 - **Coding assistant = LLM + tool use**: el LLM razona, las herramientas actúan; sin tool use solo puede hablar del código → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]

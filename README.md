@@ -47,6 +47,9 @@ Notes are written in **Spanish (Colombian)** as a personal learning choice. Code
 │
 ├── 📁 03_mcp/                       ← Course 3: Introduction to MCP
 ├── 📁 04_claude_code/               ← Course 4: Claude Code in Action
+│   ├── _overview.md
+│   ├── 01x_what_is_claude_code/
+│   └── 02x_getting_hands_on/
 │
 └── 📁 _comparativas/                ← Cross-course synthesis notes
 ```
