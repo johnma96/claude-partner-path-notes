@@ -4,7 +4,7 @@ authors: ["John Mario Montoya Zapata"]
 date: "28/04/2026"
 updated: "10/06/2026"
 course: "Building with the Claude API"
-status: "en progreso"
+status: "completado"
 tags: ["claude-api", "anthropic", "sdk", "mensajes", "herramientas"]
 links:
   - "[[INDEX]]"

@@ -14,8 +14,8 @@ Notes are written in **Spanish (Colombian)** as a personal learning choice. Code
 
 | # | Course | Status | Notes |
 |---|--------|--------|-------|
-| 01 | Introduction to Agent Skills | ✅ Complete | Skills in Claude Code: reusable markdown instructions |
-| 02 | Building with the Claude API | 🟡 In progress | Messages, tools, streaming, RAG, MCP, and more |
+| 01 | Introduction to Agent Skills | ✅ Complete · [Certificate](https://verify.skilljar.com/c/zz4nrfwq7s29) | Skills in Claude Code: reusable markdown instructions |
+| 02 | Building with the Claude API | ✅ Complete · [Certificate](https://verify.skilljar.com/c/xrmrv9zxqoak) | Messages, tools, streaming, RAG, MCP, and more |
 | 03 | Introduction to Model Context Protocol | ⬜ Pending | Building MCP servers and clients in Python |
 | 04 | Claude Code in Action | ⬜ Pending | Integrating Claude Code into real development workflows |
 

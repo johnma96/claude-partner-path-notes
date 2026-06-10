@@ -15,7 +15,7 @@
 | Curso | Estado | Lectures completadas |
 |-------|--------|----------------------|
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
-| 02 · Building with the Claude API | 🟡 En progreso | 12 / 12 notas (curso completo en borrador) |
+| 02 · Building with the Claude API | ✅ Completado | 12 / 12 |
 | 03 · Introduction to Model Context Protocol | ⬜ Pendiente | 0 / ? |
 | 04 · Claude Code in Action | ⬜ Pendiente | 0 / ? |
 
@@ -38,12 +38,12 @@
 
 ---
 
-## 02 · Building with the Claude API 🟡
+## 02 · Building with the Claude API ✅
 
 > Espectro completo de trabajo con modelos Anthropic vía API: mensajes, herramientas,
 > streaming, contexto, y más.
 
-- Overview: [[02_claude_api/_overview]] 🟡
+- Overview: [[02_claude_api/_overview]] ✅
 - Lectures:
   - [[02_claude_api/01x_api_fundamentals/010_fundamentos_api_y_conversaciones]] — Modelos, flujo de 5 pasos, request básico, multi-turn stateless ✅
   - [[02_claude_api/02x_system_prompts/020_system_prompts]] — System prompt como parámetro `system=` separado ✅
