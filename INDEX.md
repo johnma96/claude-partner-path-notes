@@ -15,7 +15,7 @@
 | Curso | Estado | Lectures completadas |
 |-------|--------|----------------------|
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
-| 02 · Building with the Claude API | 🟡 En progreso | 11 / 11 notas (curso completo en borrador) |
+| 02 · Building with the Claude API | 🟡 En progreso | 12 / 12 notas (curso completo en borrador) |
 | 03 · Introduction to Model Context Protocol | ⬜ Pendiente | 0 / ? |
 | 04 · Claude Code in Action | ⬜ Pendiente | 0 / ? |
 
@@ -56,6 +56,7 @@
   - [[02_claude_api/09x_features_claude/090_features_claude]] — Extended Thinking · Vision/PDF · Citations · Prompt Caching · Code Execution ✅
   - [[02_claude_api/010x_mcp/100_mcp]] — FastMCP · Tools · Resources · Prompts · MCPClient · Inspector ✅
   - [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]] — Claude Code (CLAUDE.md · work trees · MCP · auto-debug) · Computer Use ✅
+  - [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]] — Workflows vs Agentes · Eval-Optimizer · Paralelización · Chaining · Routing · Environment Inspection ✅
 
 ---
 
@@ -158,6 +159,13 @@ flowchart TD
 - **Tools vs Resources**: tools = reactivo (Claude las pide); resources = proactivo (cliente solicita por URI) → [[02_claude_api/010x_mcp/100_mcp]]
 - **Prompts MCP**: retornan `list[base.Message]` listos para Claude; reusables como slash commands → [[02_claude_api/010x_mcp/100_mcp]]
 - **MCP Inspector**: `mcp dev server.py` → debugger en browser (requiere Node.js/npx) → [[02_claude_api/010x_mcp/100_mcp]]
+- **Workflows vs Agentes**: workflow cuando pasos conocidos (confiabilidad); agente cuando desconocidos (flexibilidad) · preferir workflow por defecto → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Patrón Evaluador-Optimizador**: produce → evalúa con criterio objetivo → feedback → repite hasta calidad aceptable → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Paralelización de workflows**: fan-out de subtareas independientes → agregador · cada subtarea = prompt enfocado + evaluable por separado → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Chaining**: output_N = input_N+1 · útil cuando prompts monolíticos ignoran constraints → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Routing**: clasificador liviano (Haiku) → pipeline especializado por categoría → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Herramientas abstractas para agentes**: `bash`/`web_fetch`/`file_write` > `run_tests`/`install_pkg` · combinación creativa > especialización → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
+- **Environment Inspection**: observar resultado de cada acción antes de la siguiente · esencial para agentes, especialmente Computer Use → [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]]
 
 ### MCP · Protocolo y primitivas
 *(vacío — se llena al avanzar en Curso 3)*

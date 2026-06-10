@@ -2,7 +2,7 @@
 title: "Overview · Building with the Claude API"
 authors: ["John Mario Montoya Zapata"]
 date: "28/04/2026"
-updated: "09/06/2026"
+updated: "10/06/2026"
 course: "Building with the Claude API"
 status: "en progreso"
 tags: ["claude-api", "anthropic", "sdk", "mensajes", "herramientas"]
@@ -31,6 +31,7 @@ links:
 | 40-45 | Features de Claude (Thinking, Vision, Citations, Caching, Code Execution) | [[02_claude_api/09x_features_claude/090_features_claude]] | ✅ borrador |
 | 46-55 | Model Context Protocol (FastMCP · Tools · Resources · Prompts · MCPClient · Inspector) | [[02_claude_api/010x_mcp/100_mcp]] | ✅ borrador |
 | 56-63 | Anthropic Apps: Claude Code in Action + Computer Use | [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]] | ✅ borrador |
+| 64-70 | Agents and Workflows (Eval-Optimizer · Parallelization · Chaining · Routing · Agents · Environment Inspection) | [[02_claude_api/012x_agents_and_workflows/120_agents_and_workflows]] | ✅ borrador |
 
 ## Conceptos clave del curso
 
@@ -59,6 +60,9 @@ links:
 - **Git work trees**: copias físicas del proyecto en directorios separados para paralelizar instancias de Claude Code sin conflictos
 - **Debugging automatizado**: GitHub Actions + CloudWatch + Claude Code → PR con fixes sin intervención manual
 - **Computer Use**: loop screenshot → Claude → acción (clic/tecla) sobre Docker container — mismo mecanismo de tool use, schema `computer_20250124`
+- **Workflows vs Agentes**: workflow cuando los pasos son conocidos (alta confiabilidad); agente cuando son desconocidos (flexibilidad); preferir workflow por defecto
+- **Patrones de workflow**: Evaluador-Optimizador (produce→evalúa→loop) · Paralelización (fan-out→agregador) · Chaining (output_N = input_N+1) · Routing (clasificar→pipeline especializado)
+- **Diseño de agentes**: herramientas abstractas > especializadas · Environment Inspection tras cada acción · puede pedir inputs adicionales al usuario
 
 ## Conexiones con otros cursos
 

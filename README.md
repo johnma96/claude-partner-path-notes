@@ -41,7 +41,9 @@ Notes are written in **Spanish (Colombian)** as a personal learning choice. Code
 │   ├── 07x_tool_use/
 │   ├── 08x_rag/
 │   ├── 09x_features_claude/
-│   └── 010x_mcp/
+│   ├── 010x_mcp/
+│   ├── 011x_anthropic_apps/
+│   └── 012x_agents_and_workflows/
 │
 ├── 📁 03_mcp/                       ← Course 3: Introduction to MCP
 ├── 📁 04_claude_code/               ← Course 4: Claude Code in Action
