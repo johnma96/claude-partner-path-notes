@@ -17,7 +17,7 @@
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
 | 02 · Building with the Claude API | ✅ Completado | 12 / 12 |
 | 03 · Introduction to Model Context Protocol | ✅ Cubierto en Curso 02 | — |
-| 04 · Claude Code in Action | ⬜ Pendiente | 0 / ? |
+| 04 · Claude Code in Action | 🟡 En progreso | 1 / ? |
 
 ---
 
@@ -71,13 +71,13 @@
 
 ---
 
-## 04 · Claude Code in Action
+## 04 · Claude Code in Action 🟡
 
-> Integrar Claude Code en flujos de desarrollo reales.
+> Integrar Claude Code en flujos de desarrollo reales: contexto, hooks, MCP, GitHub Actions y SDK.
 
-- Overview: [[04_claude_code/_overview]] ⬜
+- Overview: [[04_claude_code/_overview]] 🟡
 - Lectures:
-  *(se irán agregando a medida que avances)*
+  - [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]] — Coding assistant = LLM + tool use · demos (Chalk 3.9×, churn, Playwright, PII detection) ✅
 
 ---
 
@@ -171,7 +171,10 @@ flowchart TD
 *(vacío — se llena al avanzar en Curso 3)*
 
 ### Claude Code · Flujo de desarrollo
-*(vacío — se llena al avanzar en Curso 4)*
+- **Coding assistant = LLM + tool use**: el LLM razona, las herramientas actúan; sin tool use solo puede hablar del código → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
+- **Loop de tool use en Claude Code**: solicita acción → ejecuta en sistema real → resultado vuelve → repite hasta `stop_reason != "tool_use"` → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
+- **Extensibilidad MCP**: `claude mcp add nombre comando` conecta cualquier servidor MCP al agente → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
+- **GitHub Actions + Claude Code**: revisiones automáticas en PRs con herramientas GitHub (comentarios, commits) · detección de PII en flujo de datos → [[04_claude_code/01x_what_is_claude_code/010_que_es_claude_code]]
 
 ---
 
