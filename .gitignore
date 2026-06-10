@@ -55,6 +55,9 @@ coverage/
 # ── Obsidian ─────────────────────────────────────────────────────────────────
 .obsidian/
 
+# ── Hands-on projects (binaries, generated code, local config) ──────────────
+04_claude_code/02x_getting_hands_on/uigen/
+
 # ── Claude Code internals ────────────────────────────────────────────────────
 # CLAUDE.md and .claude/skills/ are intentionally kept (project docs & skills)
 .claude/settings.json
