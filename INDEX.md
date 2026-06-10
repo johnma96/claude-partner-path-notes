@@ -15,7 +15,7 @@
 | Curso | Estado | Lectures completadas |
 |-------|--------|----------------------|
 | 01 · Introduction to Agent Skills | ✅ Completado | 6 / 6 |
-| 02 · Building with the Claude API | 🟡 En progreso | 10 / 10 notas (curso completo en borrador) |
+| 02 · Building with the Claude API | 🟡 En progreso | 11 / 11 notas (curso completo en borrador) |
 | 03 · Introduction to Model Context Protocol | ⬜ Pendiente | 0 / ? |
 | 04 · Claude Code in Action | ⬜ Pendiente | 0 / ? |
 
@@ -55,6 +55,7 @@
   - [[02_claude_api/08x_rag/080_rag_and_agentic_search]] — RAG: chunking · embeddings · BM25 · RRF · reranking · contextual retrieval ✅
   - [[02_claude_api/09x_features_claude/090_features_claude]] — Extended Thinking · Vision/PDF · Citations · Prompt Caching · Code Execution ✅
   - [[02_claude_api/010x_mcp/100_mcp]] — FastMCP · Tools · Resources · Prompts · MCPClient · Inspector ✅
+  - [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]] — Claude Code (CLAUDE.md · work trees · MCP · auto-debug) · Computer Use ✅
 
 ---
 
@@ -146,6 +147,10 @@ flowchart TD
 - **Citations**: `citation_page_location` (PDF) · `citation_char_location` (texto) · transparencia de fuentes → [[02_claude_api/09x_features_claude/090_features_claude]]
 - **Prompt Caching**: `cache_control` ephemeral · TTL 1h · mínimo 1024 tokens · máx 4 breakpoints · invalida si cambia contenido antes del breakpoint → [[02_claude_api/09x_features_claude/090_features_claude]]
 - **Code Execution + Files API**: Docker sin red · I/O exclusivo vía Files API · tool del lado del servidor → [[02_claude_api/09x_features_claude/090_features_claude]]
+- **Claude Code**: agente en terminal · CLAUDE.md como memoria · 3 tipos (Project/Local/User) · cliente MCP nativo → [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]]
+- **Git work trees**: copias físicas del proyecto por rama para paralelizar instancias sin conflictos → [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]]
+- **Debugging automatizado**: GitHub Actions + CloudWatch + Claude Code → PR con fixes diarios → [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]]
+- **Computer Use**: loop screenshot→Claude→acción · schema `computer_20250124` · Docker container · implementación de referencia de Anthropic → [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]]
 - **MCP**: protocolo que delega definición y ejecución de herramientas a un servidor especializado → [[02_claude_api/010x_mcp/100_mcp]]
 - **FastMCP**: `@mcp.tool` / `@mcp.resource` / `@mcp.prompt` — schemas JSON generados automáticamente desde Python → [[02_claude_api/010x_mcp/100_mcp]]
 - **MCPClient**: wrapper de `ClientSession` con `AsyncExitStack`; métodos: `list_tools()`, `call_tool()`, `list_prompts()`, `get_prompt()`, `read_resource()` → [[02_claude_api/010x_mcp/100_mcp]]

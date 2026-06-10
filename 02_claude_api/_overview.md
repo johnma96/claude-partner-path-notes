@@ -30,6 +30,7 @@ links:
 | 31-39 | RAG y Agentic Search | [[02_claude_api/08x_rag/080_rag_and_agentic_search]] | ✅ borrador |
 | 40-45 | Features de Claude (Thinking, Vision, Citations, Caching, Code Execution) | [[02_claude_api/09x_features_claude/090_features_claude]] | ✅ borrador |
 | 46-55 | Model Context Protocol (FastMCP · Tools · Resources · Prompts · MCPClient · Inspector) | [[02_claude_api/010x_mcp/100_mcp]] | ✅ borrador |
+| 56-63 | Anthropic Apps: Claude Code in Action + Computer Use | [[02_claude_api/011x_anthropic_apps/110_anthropic_apps]] | ✅ borrador |
 
 ## Conceptos clave del curso
 
@@ -54,6 +55,10 @@ links:
 - **Transport stdio**: servidor lanzado como subproceso; comunicación por stdin/stdout — más común en desarrollo
 - **Tools vs Resources**: tools = reactivo (Claude las invoca); resources = proactivo (cliente solicita por URI directa o templada)
 - **Prompts MCP**: retornan `list[base.Message]` listos para Claude — slash commands pre-evaluados por el autor del servidor
+- **Claude Code**: agente de desarrollo en terminal — `CLAUDE.md` como memoria de proyecto, tres tipos de memoria (Project/Local/User), cliente MCP nativo
+- **Git work trees**: copias físicas del proyecto en directorios separados para paralelizar instancias de Claude Code sin conflictos
+- **Debugging automatizado**: GitHub Actions + CloudWatch + Claude Code → PR con fixes sin intervención manual
+- **Computer Use**: loop screenshot → Claude → acción (clic/tecla) sobre Docker container — mismo mecanismo de tool use, schema `computer_20250124`
 
 ## Conexiones con otros cursos
 
