@@ -1,0 +1,62 @@
+# ── Secrets & credentials ──────────────────────────────────────────────────
+.env
+*.env
+.env.local
+.env.production
+secrets.json
+credentials.json
+**/api_keys*
+
+# ── Python ──────────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.Python
+
+# ── Jupyter ──────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Large / binary assets ────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.rar
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.ico
+*.mp4
+*.mov
+
+# ── Obsidian ─────────────────────────────────────────────────────────────────
+.obsidian/
+
+# ── Claude Code internals ────────────────────────────────────────────────────
+# CLAUDE.md and .claude/skills/ are intentionally kept (project docs & skills)
+.claude/settings.json
+.claude/settings.local.json
+.claude/todos/
+memory/
+
+# ── OS & editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Eval outputs (may contain prompt outputs with personal data) ─────────────
+output.html
+output.json
